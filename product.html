@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"/>
+    <title>Document</title>
+</head>
+<body>
+    <!-- responsive navbar -->
+    <nav class="bg-green-100 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10">
+        <h1 class="text-3xl font-semibold">GREENDEN</h1>
+  
+        <svg class="h-6 w-6 text-gray-800 dark:text-white md:hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+        
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+          <li>
+            <a href="index.html" class="hover:underline hover:text-black">Home</a>
+          </li>
+          <li>
+            <a href="product.html" class="hover:underline hover:text-black">Products</a>
+          </li>
+          <li>
+            <a href="contact.html" class="hover:underline hover:text-black">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+    <!-- products -->
+     <section class="text-center mt-10">
+        <h1 class="text-4xl font-bold">Our Products</h1>
+        <input type="text" placeholder="Search for a Product...." class="border border-black p-2 mt-5" style="width: 80%;">
+     </section>
+     <!-- productlist -->
+      <section class="text-center grid grid-cols-2 md:grid-cols-4">
+        <div class="m-10">
+            <img src="./Images/bestseller1.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2">
+            <p>Rose Plant</p>
+            <p>$20</p>
+        </div>
+        <div class="m-10">
+            <img src="./Images/bestseller2.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2">
+            <p>Rose Plant</p>
+            <p>$20</p>
+        </div>
+        <div class="m-10">
+            <img src="./Images/bestseller4.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2">
+            <p>Rose Plant</p>
+            <p>$20</p>
+        </div >
+        <div class="m-10">
+            <img src="./Images/bestseller3.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2">
+            <p>Rose Plant</p>
+            <p>$20</p>
+        </div >
+        <div class="m-10">
+            <img src="./Images/bestseller2.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2">
+            <p>Rose Plant</p>
+            <p>$20</p>
+        </div>
+        <div class="m-10">
+            <img src="./Images/bestseller4.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2">
+            <p>Rose Plant</p>
+            <p>$20</p>
+        </div>
+        <div class="m-10">
+            <img src="./Images/bestseller3.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2">
+            <p>Rose Plant</p>
+            <p>$20</p>
+        </div>
+        <div class="m-10">
+            <img src="./Images/bestseller1.jpg" class="inline hover:shadow-2xl transform hover:-translate-y-2">
+            <p>Rose Plant</p>
+            <p>$20</p>
+        </div>
+      </section>
+      <!-- footer -->
+      <section class="bg-green-100 mt-2">
+        <div class="p-10">
+          <h1 class="text-4xl font-bold">GREENDEN</h1>
+          <p class="mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempora repellendus</p>
+          <p class="mt-5">@ 2024 Greenday.com</p>
+        </div>
+       </section>
+</body>
+</html>
