@@ -11,10 +11,10 @@
 </head>
 <body>
         <!-- responsive navbar -->
-        <nav class="bg-green-100 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10">
+        <nav class="bg-pink-400 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10">
             <h1 class="text-3xl font-semibold">GREENDEN</h1>
       
-            <svg class="h-6 w-6 text-gray-800 dark:text-white md:hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <svg id="menuicons" class="h-6 w-6 text-gray-800 dark:text-white md:hidden cursor-pointer" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
             </svg>
             
@@ -30,9 +30,26 @@
               </li>
             </ul>
           </nav>
+         <!-- sidenav -->
+          <section id="sidenav" class="bg-pink-300 fixed z-20 top-0 transition-all duration-700" style="width: 50%; height: 100vh; right: -50%;">
+            <div class="text-right p-5">
+              <h1 id="closenav" class="inline cursor-pointer">X</h1>
+            </div>
+            <ul class="flex flex-col items-center gap-8 text-black font-semibold">
+            <li>
+              <a href="index.html" class="hover:underline hover:text-black">Home</a>
+            </li>
+            <li>
+              <a href="product.html" class="hover:underline hover:text-black">Products</a>
+            </li>
+            <li>
+              <a href="contact.html" class="hover:underline hover:text-black">Contacts</a>
+            </li>
+          </ul>
+        </section>
           <!-- contactform -->
           <div class="font-[sans-serif]">
-            <div class="bg-gradient-to-r from-green-300 to-green-100 w-full h-36"></div>
+            <div class="bg-gradient-to-r from-pink-400 to-pink-100 w-full h-36"></div>
             <div class="-mt-20 mb-6 px-4">
               <div class="mx-auto max-w-6xl shadow-lg p-8 relative bg-white rounded">
                 <h2 class="text-xl text-gray-800 font-bold">Product or Service Inquiry</h2>
@@ -40,31 +57,31 @@
                 <form class="mt-8 grid sm:grid-cols-2 gap-4">
                   <div>
                     <input type='text' placeholder='Name'
-                      class="w-full rounded py-2.5 px-4 border border-gray-300 focus:border-green-600 text-sm outline-none" />
+                      class="w-full rounded py-2.5 px-4 border border-gray-300 focus:border-pink-600 text-sm outline-none" />
                   </div>
                   <div>
                     <input type='email' placeholder='Email'
-                      class="w-full rounded py-2.5 px-4 border border-gray-300 focus:border-green-600 text-sm outline-none" />
+                      class="w-full rounded py-2.5 px-4 border border-gray-300 focus:border-pink-600 text-sm outline-none" />
                   </div>
                   <div>
                     <input type='email' placeholder='Phone No.'
-                      class="w-full rounded py-2.5 px-4 border border-gray-300 focus:border-green-600 text-sm outline-none" />
+                      class="w-full rounded py-2.5 px-4 border border-gray-300 focus:border-pink-600 text-sm outline-none" />
                   </div>
                   <div>
                     <input type='text' placeholder='Website'
-                      class="w-full rounded py-2.5 px-4 border border-gray-300 focus:border-green-600 text-sm outline-none" />
+                      class="w-full rounded py-2.5 px-4 border border-gray-300 focus:border-pink-600 text-sm outline-none" />
                   </div>
                   <div>
                     <input type='text' placeholder='Company'
-                      class="w-full rounded py-2.5 px-4 border border-gray-300 focus:border-green-600 text-sm outline-none" />
+                      class="w-full rounded py-2.5 px-4 border border-gray-300 focus:border-pink-600 text-sm outline-none" />
                   </div>
                   <div>
                     <input type='text' placeholder='Subject'
-                      class="w-full rounded py-2.5 px-4 border border-gray-300 focus:border-green-600 text-sm outline-none" />
+                      class="w-full rounded py-2.5 px-4 border border-gray-300 focus:border-pink-600 text-sm outline-none" />
                   </div>
                   <div>
                     <textarea placeholder='Message' rows="6"
-                      class="col-span-full w-full rounded px-4 border border-gray-300 focus:border-green-600 text-sm pt-3 outline-none"></textarea>
+                      class="col-span-full w-full rounded px-4 border border-gray-300 focus:border-pink-600 text-sm pt-3 outline-none"></textarea>
                   </div>
                   <div class="flex items-center col-span-full">
                     <input id="checkbox1" type="checkbox"
@@ -84,12 +101,13 @@
             </div>
           </div>
           <!-- footer -->
-         <section class="bg-green-100 mt-2">
+         <section class="bg-pink-400 mt-2">
             <div class="p-10">
               <h1 class="text-4xl font-bold">GREENDEN</h1>
               <p class="mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempora repellendus</p>
               <p class="mt-5">@ 2024 Greenday.com</p>
             </div>
            </section>
+           <script src="contact.js"></script>
 </body>
 </html>

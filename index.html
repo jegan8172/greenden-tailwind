@@ -11,10 +11,10 @@
   </head>
   <body>
     <!-- responsive navbar -->
-    <nav class="bg-green-100 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10">
+    <nav class="bg-pink-400 p-3 flex justify-between items-center shadow-xl sticky top-0 z-10">
       <h1 class="text-3xl font-semibold">GREENDEN</h1>
 
-      <svg class="h-6 w-6 text-gray-800 dark:text-white md:hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+      <svg id="menuicons" class="h-6 w-6 text-gray-800 dark:text-white md:hidden cursor-pointer" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
       </svg>
       
@@ -30,8 +30,25 @@
         </li>
       </ul>
     </nav>
+    <!-- sidenav -->
+     <section id="sidenav" class="bg-pink-300 fixed z-20 top-0 transition-all duration-700" style="width: 50%; height: 100vh; right: -50%;">
+      <div class="text-right p-5">
+        <h1 id="closenav" class="inline cursor-pointer">X</h1>
+      </div>
+      <ul class="flex flex-col items-center gap-8 text-black font-semibold">
+      <li>
+        <a href="index.html" class="hover:underline hover:text-black">Home</a>
+      </li>
+      <li>
+        <a href="product.html" class="hover:underline hover:text-black">Products</a>
+      </li>
+      <li>
+        <a href="contact.html" class="hover:underline hover:text-black">Contacts</a>
+      </li>
+    </ul>
+  </section> 
     <!-- header Seaction-->
-    <section class="bg-green-100 p-4 flex justify-center">
+    <section class="bg-pink-300 p-4 flex justify-center">
       <div>
         <p class="mb-4 md:mt-10">We Offers You a wide Range of Artificial and Natural Flowers</p>
         <h2 class="font-bold text-3xl mb-5 md:text-5xl mt-10">Plants for your interior</h2>
@@ -107,16 +124,16 @@
        <section>
         <h1 class="text-3xl font-bold mt-5 text-center">Customer Reviews</h1>
         <div class="flex flex-col gap-5 text-white m-5">
-          <div class="bg-green-900 p-5 container">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet voluptates quaerat deserunt eveniet distinctio qui, odit iusto necessitatibus cumque nostrum dignissimos eum suscipit eaque architecto recusandae quis deleniti impedit commodi.</p>
-            <p class="font-bold text-yellow-400" >Jegan Priyan</p>
+          <div class="bg-pink-400 p-5 container ">
+            <p class="text-black font-semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet voluptates quaerat deserunt eveniet distinctio qui, odit iusto necessitatibus cumque nostrum dignissimos eum suscipit eaque architecto recusandae quis deleniti impedit commodi.</p>
+            <p class="font-bold text-yellow-400 " >Jegan Priyan</p>
           </div>
-          <div class="bg-green-900 p-5 container">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.eveniet distinctio qui, odit iusto necessitatibus cumque nostrum dignissimos eum suscipit eaque architecto recusandae quis deleniti impedit commodi.</p>
+          <div class="bg-pink-400 p-5 container">
+            <p class="text-black font-semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit.eveniet distinctio qui, odit iusto necessitatibus cumque nostrum dignissimos eum suscipit eaque architecto recusandae quis deleniti impedit commodi.</p>
             <p class="font-bold text-yellow-400" >Sahana</p>
           </div >
-          <div class="bg-green-900 p-5 container">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet voluptates quaerat deserunt eveniet distinctio qui, odit iusto necessitatibus cumque nostrum dignissimos eum suscipit eaque architecto recusandae quis deleniti impedit commodi.</p>
+          <div class="bg-pink-400 p-5 container">
+            <p class="text-black font-semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet voluptates quaerat deserunt eveniet distinctio qui, odit iusto necessitatibus cumque nostrum dignissimos eum suscipit eaque architecto recusandae quis deleniti impedit commodi.</p>
             <p class="font-bold text-yellow-400" >Anonymous</p>
           </div>
         </div>
@@ -132,12 +149,13 @@
           </div>
         </section>
         <!-- footer -->
-         <section class="bg-green-100 mt-2">
+         <section class="bg-pink-300 mt-2">
           <div class="p-10">
             <h1 class="text-4xl font-bold">GREENDEN</h1>
             <p class="mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, tempora repellendus</p>
             <p class="mt-5">@ 2024 Greenday.com</p>
           </div>
          </section>
+         <script src="index.js"></script>
   </body>
   </html>
